@@ -1,5 +1,52 @@
 ## Facebook iOS Mediation Adapter Changelog
 
+#### Next Version
+- Adapter now returns a non-zero `mediaContent` aspect ratio regardless if the media view is rendered or not.
+
+#### Version 5.7.1.2
+- Added standardized adapter error codes and messages.
+
+Built and tested with
+- Google Mobile Ads SDK version 7.56.0.
+- FAN SDK version 5.7.1.
+
+#### Version 5.7.1.1
+- Removed support for the i386 architecture.
+
+Built and tested with
+- Google Mobile Ads SDK version 7.56.0.
+- FAN SDK version 5.7.1.
+
+#### Version 5.7.1.0
+- Verified compatibility with FAN SDK 5.7.1.
+- Added support for Facebook native banner ads when using open bidding.
+- Native ads now return a `GADNativeAdImage` for the icon asset.
+
+Built and tested with
+- Google Mobile Ads SDK version 7.55.1.
+- FAN SDK version 5.7.1.
+
+#### Version 5.7.0.0
+- Verified compatibility with FAN SDK 5.7.0.
+
+Built and tested with
+- Google Mobile Ads SDK version 7.55.1.
+- FAN SDK version 5.7.0.
+
+#### Version 5.6.1.0
+- Verified compatibility with FAN SDK 5.6.1.
+
+Built and tested with
+- Google Mobile Ads SDK version 7.53.1.
+- FAN SDK version 5.6.1.
+
+#### Version 5.6.0.0
+- Verified compatibility with FAN SDK 5.6.0.
+
+Built and tested with
+- Google Mobile Ads SDK version 7.51.0.
+- FAN SDK version 5.6.0.
+
 #### Version 5.5.1.1
 - Adapter now returns a non-zero `mediaContent` aspect ratio once the media view is rendered in a view.
 - Added additional logging for open bidding.

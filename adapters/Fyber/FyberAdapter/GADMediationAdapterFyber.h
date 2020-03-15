@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC.
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,12 +13,8 @@
 // limitations under the License.
 
 #import <Foundation/Foundation.h>
-#import <GoogleMobileAds/GoogleMobileAds.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface GADMediationAdapterFyber : NSObject <GADMediationAdapter>
+/// Mediation network adapter for Fyber.
+@interface GADMediationAdapterFyber : NSObject
 
 @end
-
-NS_ASSUME_NONNULL_END
