@@ -6,34 +6,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import <NendAd/NendAd.h>
+
 #import "GADMAdapterNend.h"
 #import "GADMAdapterNendConstants.h"
-@import GoogleMobileAds;
-@import NendAd;
-
-NS_ASSUME_NONNULL_BEGIN
 
 @protocol GADMAdapterNendNativeAdLoaderDelegate <NSObject>
 
-- (void)didFailToLoadWithError:(NSError *)error;
+- (void)didFailToLoadWithError:(nonnull NSError *)error;
 - (void)didReceiveUnifiedNativeAd:(nonnull id<GADMediationNativeAd>)ad;
 
 @end
 
 @interface GADMAdapterNendNativeAdLoader : NSObject
 
-@property(nonatomic, strong) NADNativeClient *normalLoader;
-@property(nonatomic, strong) NADNativeVideoLoader *videoLoader;
-
-@property(nonatomic, strong) NADNativeCompletionBlock normalCompletionBlock;
-typedef void (^NADNativeVideoCompletionBlock)(NADNativeVideo * _Nullable ad, NSError * _Nullable error);
-@property(nonatomic, strong) NADNativeVideoCompletionBlock videoCompletionBlock;
+typedef void (^NADNativeVideoCompletionBlock)(NADNativeVideo *_Nullable ad,
+NSError *_Nullable error);
 
 - (void)fetchNativeAd:(nonnull NSArray *)options
-               spotId:(NSString *)spotId
-               apiKey:(NSString *)apiKey
-                extra:(GADMAdapterNendExtras *)extras;
+               spotId:(nonnull NSString *)spotId
+               apiKey:(nonnull NSString *)apiKey
+               extra:(nonnull GADMAdapterNendExtras *)extras;
 
 @end
-
-NS_ASSUME_NONNULL_END

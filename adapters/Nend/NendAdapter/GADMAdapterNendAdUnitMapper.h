@@ -6,15 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
-@import GoogleMobileAds;
-
-NS_ASSUME_NONNULL_BEGIN
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @interface GADMAdapterNendAdUnitMapper : NSObject
 
-+ (BOOL)validateApiKey:(NSString *)apiKey spotId:(NSString *)spotId;
-+ (NSString *)mappingAdUnitId:(id<GADMAdNetworkConnector>)connector
-paramKey:(NSString *)paramKey;
-@end
++ (BOOL)isValidAPIKey:(nonnull NSString *)apiKey spotId:(nonnull NSString *)spotId;
 
-NS_ASSUME_NONNULL_END
+@end

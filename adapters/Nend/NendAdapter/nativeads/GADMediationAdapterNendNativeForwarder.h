@@ -9,9 +9,9 @@
 
 @interface GADMediationAdapterNendNativeForwarder : GADMAdapterNendNativeAdLoader
 
-- (instancetype)initWithAdapter:(id<GADMAdNetworkAdapter>)adapter
-                      connector:(id<GADMAdNetworkConnector>)connector;
-- (void)getNativeAdWithAdTypes:(NSArray<GADAdLoaderAdType> *)adTypes options:(NSArray<GADAdLoaderOptions *> *)options;
+- (nonnull instancetype)initWithAdapter:(nonnull id<GADMAdNetworkAdapter>)adapter
+                              connector:(nonnull id<GADMAdNetworkConnector>)connector;
+- (void)getNativeAdWithAdTypes:(nonnull NSArray<GADAdLoaderAdType> *)adTypes
+                       options:(nullable NSArray<GADAdLoaderOptions *> *)options;
 
 @end
-
